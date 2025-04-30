@@ -6,24 +6,7 @@ Click the **Launch Stack** button to deploy a standalone MATLAB&reg; desktop cli
 
 | Region | Launch Link |
 | --------------- | ----------- |
-| **us-east-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **us-east-2** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **us-west-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **us-west-2** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ca-central-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ca-central-1.console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **eu-central-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **eu-west-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **eu-west-2** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **eu-west-3** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://eu-west-3.console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **eu-north-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://eu-north-1.console.aws.amazon.com/cloudformation/home?region=eu-north-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **sa-east-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://sa-east-1.console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **me-south-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://me-south-1.console.aws.amazon.com/cloudformation/home?region=me-south-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-east-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-east-1.console.aws.amazon.com/cloudformation/home?region=ap-east-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-south-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-south-1.console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-northeast-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-northeast-2** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-southeast-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
-| **ap-southeast-2** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start an cluster using the template")](https://ap-southeast-2.console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/create/review?templateURL=https://matlab-on-aws.s3.amazonaws.com/R2024b/aws-matlab-template.json) |
+| **us-east-1** | [![alt text](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png "Start a MATLAB instance using the template")](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://matlab-on-aws-stage.s3.amazonaws.com/413761/aws-matlab-template.json) |
 
 
 **Note**: Creating a stack on AWS can take a few minutes.
@@ -42,6 +25,7 @@ After you click the Launch Stack button above, the “Create stack” page will 
 | **Instance Name** | Name for the MATLAB virtual machine |
 | **Remote access protocol** | Access protocol to connect to this instance |
 | **Enable browser access for MATLAB** | Option that enables access to MATLAB on your cloud instance within a browser. Opening MATLAB in a browser opens a separate MATLAB session to your Remote Desktop Protocol (RDP) session or NICE DCV session. |
+| **Choose if a public IP address should be attached to the MATLAB EC2 instance** | Choose if a public IP address should be attached to the MATLAB EC2 instance. |
 | **Keep public ip the same** | Flag indicating whether you want to keep the same public IP address for the instance |
 | **Storage Size (GiB)** | Size in GB of the root volume |
 | **Custom IAM Role (Optional)** | Name of a custom IAM Role to associate with this instance. If not specified, a predefined role is used. If specified, features requiring special permissions will be unavailable (NICE DCV, CloudWatch, IAM Policies). |
@@ -49,11 +33,11 @@ After you click the Launch Stack button above, the “Create stack” page will 
 | **VPC to deploy this stack to** | ID of an existing VPC in which to deploy this stack |
 | **Subnet** | ID of an existing subnet. To access the instance from anywhere, ensure that your subnet auto-assigns public IP addresses and is connected to the internet. |
 | **SSH Key Pair** | Name of an existing EC2 KeyPair to allow SSH access to all the instances. See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html for details on creating these. |
-| **Allow connections from** | Comma-separated list of IP address ranges that will be allowed to connect to this instance. Each IP CIDR should be formatted as \<ip_address>/\<mask>. The mask determines the number of IP addresses to include. A mask of 32 is a single IP address. Example of allowed values: 10.0.0.1/32 or 10.0.0.0/16,192.34.56.78/32. This calculator can be used to build a specific range: https://www.ipaddressguide.com/cidr. You may need to contact your IT administrator to determine which address is appropriate. |
+| **ClientIPAddress** | Comma-separated list of IP address ranges that will be allowed to connect to this instance. Each IP CIDR should be formatted as \<ip_address>/\<mask>. The mask determines the number of IP addresses to include. A mask of 32 is a single IP address. Example of allowed values: 10.0.0.1/32 or 10.0.0.0/16,192.34.56.78/32. This calculator can be used to build a specific range: https://www.ipaddressguide.com/cidr. You may need to contact your IT administrator to determine which address is appropriate. |
 | **Remote password** | Password for the "ubuntu" user. You also need to enter this as an authentication token to access MATLAB on your cloud instance within a browser. |
 | **Confirm remote password** | Confirm Password |
 | **License Manager for MATLAB connection string** | Optional License Manager for MATLAB, specified as a string in the form \<port>@\<hostname>. If not specified, use online licensing. If specified, the network license manager (NLM) must be accessible from the specified VPC and subnets. To use the private hostname of the NLM hub instead of the public hostname, specify the security group ID of the NLM hub in the AdditionalSecurityGroup parameter. For more information, see https://github.com/mathworks-ref-arch/license-manager-for-matlab-on-aws. |
-| **Configure cloudwatch logging for the MATLAB instance** | Flag indicating whether cloudwatch logging for the MATLAB instance is enabled. |
+| **Configure cloudwatch logging for the MATLAB instance** | Flag indicating whether cloudwatch logging for the MATLAB instance is to be enabled. For private instances, CloudWatch logs may not be updated unless a communication method like NAT Gateway or VPC endpoint is setup. |
 | **AutoShutdown** | Choose whether you want to enable autoshutdown for your instance after a certain number of hours |
 | **Additional security group to place instances in** | ID of an additional (optional) Security Group for the instances to be placed in. Often the License Manager for MATLAB's Security Group. |
 | **Custom AMI ID (Optional)** | ID of a custom Amazon Machine Image (AMI) in the target region (optional). If the build has been customized then the resulting machine image may no longer be compatible with the provided CloudFormation template. Compatability can in some cases be restored by making corresponding modifications to the CloudFormation template. The ID should start with 'ami-'. |
@@ -91,6 +75,14 @@ Double-click the MATLAB icon on the virtual machine desktop to start MATLAB. The
 
 # Additional Information
 
+## No Public IP Address
+If you require a private networking configuration, you can choose not to attach a public IP to the MATLAB EC2 instance using the `EnablePublicIPAddress` parameter. 
+
+> [!IMPORTANT]
+> Ensure that the private IP addresses of the jumpbox or client(s) that will access the MATLAB EC2 instance are specified in the `ClientIPAddress` parameter. 
+> In the absence of a Public IP address, the MATLAB EC2 instance may get stuck in the `CREATE_IN_PROGRESS` state unless a communication method such as a NAT Gateway or VPC endpoint for the AWS CloudFormation service is setup in your VPC. If no such setup is available, you can remove the `CreationPolicy` attribute from the `MATLABEC2Instance` resource in the template before deployment.
+> If MATLAB needs to be licensed using online licensing, the MATLAB EC2 instance will need to have access to *.mathworks.com. NAT Gateways are a common way to provide internet access for private instances.
+
 ## Delete Your Cloud Resources
 
 Once you have finished using your stack, it is recommended that you delete all resources to avoid incurring further cost. To delete the stack, do the following:
@@ -107,6 +99,6 @@ CloudWatch logs enables you to access logs from all the resources in your stack 
 
 ----
 
-Copyright 2018-2024 The MathWorks, Inc.
+Copyright 2018-2025 The MathWorks, Inc.
 
 ----
