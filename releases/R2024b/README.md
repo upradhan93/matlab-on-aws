@@ -78,10 +78,10 @@ Double-click the MATLAB icon on the virtual machine desktop to start MATLAB. The
 ## No Public IP Address
 If you require a private networking configuration, you can choose not to attach a public IP to the MATLAB EC2 instance using the `EnablePublicIPAddress` parameter. 
 
-### IMPORTANT
-- Ensure that the private IP addresses of the jumpbox or client(s) that will access the MATLAB EC2 instance are specified in the `ClientIPAddress` parameter. 
-- In the absence of a Public IP address, the MATLAB EC2 instance may get stuck in the `CREATE_IN_PROGRESS` state unless a communication method such as a NAT Gateway or VPC endpoint for the AWS CloudFormation service is setup in your VPC. If no such setup is available, you can remove the `CreationPolicy` attribute from the `MATLABEC2Instance` resource in the template before deployment.
-- If MATLAB needs to be licensed using online licensing, the MATLAB EC2 instance will need to have access to *.mathworks.com. NAT Gateways are a common way to provide internet access for private instances.
+> [!IMPORTANT]
+> - Ensure that the private IP addresses of the jumpbox or client(s) that will access the MATLAB EC2 instance are specified in the `ClientIPAddress` parameter. 
+> - In the absence of a Public IP address, the MATLAB EC2 instance may get stuck in the `CREATE_IN_PROGRESS` state unless a communication method such as a NAT Gateway or VPC endpoint for the AWS CloudFormation service is setup in your VPC. If no such setup is available, you can remove the `CreationPolicy` attribute from the `MATLABEC2Instance` resource in the template before deployment.
+> - If MATLAB needs to be licensed using online licensing, the MATLAB EC2 instance will need to have access to *.mathworks.com. NAT Gateways are a common way to provide internet access for private instances.
 
 ## Delete Your Cloud Resources
 
