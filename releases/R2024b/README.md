@@ -75,7 +75,7 @@ Double-click the MATLAB icon on the virtual machine desktop to start MATLAB. The
 
 # Additional Information
 
-## No Public IP Address
+## Private networking configuration
 If you require a private networking configuration for the MATLAB EC2 instance, you can choose not to attach a public IP to the MATLAB EC2 instance by setting the `EnablePublicIPAddress` parameter as `No`. Listed below are some important considerations for this configuration:
 
 > [!IMPORTANT]
