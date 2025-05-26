@@ -25,7 +25,7 @@ After you click the Launch Stack button above, the “Create stack” page will 
 | **Instance Name** | Name for the MATLAB virtual machine |
 | **Remote access protocol** | Access protocol to connect to this instance |
 | **Enable browser access for MATLAB** | Option that enables access to MATLAB on your cloud instance within a browser. Opening MATLAB in a browser opens a separate MATLAB session to your Remote Desktop Protocol (RDP) session or NICE DCV session. |
-| **Choose if a public IP address should be attached to the MATLAB EC2 instance** | Choose if a public IP address should be attached to the MATLAB EC2 instance. |
+| **Choose if a public IP address should be attached to the MATLAB EC2 instance** | Choose if a public IP address should be attached to the MATLAB EC2 instance. If you choose to not enable Public IP, refer to the [Private networking configuration](#private-networking-configuration) section in the readme for more information. |
 | **Keep public ip the same** | Flag indicating whether you want to keep the same public IP address for the instance |
 | **Storage Size (GiB)** | Size in GB of the root volume |
 | **Custom IAM Role (Optional)** | Name of a custom IAM Role to associate with this instance. If not specified, a predefined role is used. If specified, features requiring special permissions will be unavailable (NICE DCV, CloudWatch, IAM Policies). |
