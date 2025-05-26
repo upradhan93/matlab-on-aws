@@ -25,7 +25,7 @@ After you click the Launch Stack button above, the “Create stack” page will 
 | **Instance Name** | Name for the MATLAB virtual machine |
 | **Remote access protocol** | Access protocol to connect to this instance |
 | **Enable browser access for MATLAB** | Option that enables access to MATLAB on your cloud instance within a browser. Opening MATLAB in a browser opens a separate MATLAB session to your Remote Desktop Protocol (RDP) session or NICE DCV session. |
-| **Choose if a public IP address should be attached to the MATLAB EC2 instance** | Choose if a public IP address should be attached to the MATLAB EC2 instance. |
+| **Attach Public IP** | Choose whether to attach a public IP address to the MATLAB EC2 instance. For details about using a private network configuration, see [Configure Private Network](#configure-private-network). |
 | **Keep public ip the same** | Flag indicating whether you want to keep the same public IP address for the instance |
 | **Storage Size (GiB)** | Size in GB of the root volume |
 | **Custom IAM Role (Optional)** | Name of a custom IAM Role to associate with this instance. If not specified, a predefined role is used. If specified, features requiring special permissions will be unavailable (NICE DCV, CloudWatch, IAM Policies). |
@@ -37,7 +37,7 @@ After you click the Launch Stack button above, the “Create stack” page will 
 | **Remote password** | Password for the "ubuntu" user. You also need to enter this as an authentication token to access MATLAB on your cloud instance within a browser. |
 | **Confirm remote password** | Confirm Password |
 | **License Manager for MATLAB connection string** | Optional License Manager for MATLAB, specified as a string in the form \<port>@\<hostname>. If not specified, use online licensing. If specified, the network license manager (NLM) must be accessible from the specified VPC and subnets. To use the private hostname of the NLM hub instead of the public hostname, specify the security group ID of the NLM hub in the AdditionalSecurityGroup parameter. For more information, see https://github.com/mathworks-ref-arch/license-manager-for-matlab-on-aws. |
-| **Configure cloudwatch logging for the MATLAB instance** | Flag indicating whether cloudwatch logging for the MATLAB instance is to be enabled. For private instances, CloudWatch logs may not be updated unless a communication method like NAT Gateway or VPC endpoint is setup. |
+| **Configure cloudwatch logging for the MATLAB instance** | Flag indicating whether to enable cloudwatch logging for the MATLAB instance. For private instances, CloudWatch logs might not be updated unless you set up a NAT Gateway or VPC endpoint. For details about private networking, see [Configure Private Network](#configure-private-network). |
 | **AutoShutdown** | Choose whether you want to enable autoshutdown for your instance after a certain number of hours |
 | **Additional security group to place instances in** | ID of an additional (optional) Security Group for the instances to be placed in. Often the License Manager for MATLAB's Security Group. |
 | **Custom AMI ID (Optional)** | ID of a custom Amazon Machine Image (AMI) in the target region (optional). If the build has been customized then the resulting machine image may no longer be compatible with the provided CloudFormation template. Compatability can in some cases be restored by making corresponding modifications to the CloudFormation template. The ID should start with 'ami-'. |
