@@ -78,11 +78,10 @@ Double-click the MATLAB icon on the virtual machine desktop to start MATLAB. The
 ## Configure Private Network
 To set up a private networking configuration for the MATLAB EC2 instance, you can set the `EnablePublicIPAddress` parameter to `No` to avoid attaching a public IP to the MATLAB EC2 instance. Ensure these requirements:
 
-> [!IMPORTANT]
-> - **Client Access**: Specify the private IP addresses of the jumpbox or client(s) that will access the MATLAB EC2 instance, using the `ClientIPAddress` parameter. 
-> - **Online Licensing**: To use online licensing for MATLAB, your MATLAB EC2 instance must be able to access domains at `*.mathworks.com`. Allow outbound access to these domains by setting up an appropriate method in your VPC.
-> - **Stack Deployment**: Without a public IP, the MATLAB EC2 instance might get stuck in the `CREATE_IN_PROGRESS` state during stack deployment. To avoid this, ensure that your VPC has a NAT Gateway or [VPC endpoint for the AWS CloudFormation service (AWS)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/vpc-interface-endpoints.html#vpc-endpoint-create) before deployment. Alternatively, you can remove the `CreationPolicy` attribute from the `MATLABEC2Instance` resource in the template before deployment, but this can lead to AWS CloudFormation showing the instance with status `CREATE_COMPLETE` before it is fully configured and ready for use.
-> - **CloudWatch Logs**: To deliver CloudWatch logs from the instance, ensure that your VPC has either a NAT Gateway or a [VPC endpoint for CloudWatch service (AWS)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch-logs-and-interface-VPC.html#create-VPC-endpoint-for-CloudWatchLogs).
+- **Client Access**: Specify the private IP addresses of the jumpbox or client(s) that will access the MATLAB EC2 instance, using the `ClientIPAddress` parameter. 
+- **Online Licensing**: To use online licensing for MATLAB, your MATLAB EC2 instance must be able to access domains at `*.mathworks.com`. Allow outbound access to these domains by setting up an appropriate method in your VPC.
+- **Stack Deployment**: Without a public IP, the MATLAB EC2 instance might get stuck in the `CREATE_IN_PROGRESS` state during stack deployment. To avoid this, ensure that your VPC has a NAT Gateway or [VPC endpoint for the AWS CloudFormation service (AWS)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/vpc-interface-endpoints.html#vpc-endpoint-create) before deployment. Alternatively, you can remove the `CreationPolicy` attribute from the `MATLABEC2Instance` resource in the template before deployment, but this can lead to AWS CloudFormation showing the instance with status `CREATE_COMPLETE` before it is fully configured and ready for use.
+- **CloudWatch Logs**: To deliver CloudWatch logs from the instance, ensure that your VPC has either a NAT Gateway or a [VPC endpoint for CloudWatch service (AWS)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch-logs-and-interface-VPC.html#create-VPC-endpoint-for-CloudWatchLogs).
 
 ## Delete Your Cloud Resources
 
