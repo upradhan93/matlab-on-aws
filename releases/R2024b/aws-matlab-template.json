@@ -472,17 +472,17 @@
   },
   "Parameters": {
     "InstanceType": {
-      "Description": "AWS instance type to use for MATLAB. See https://aws.amazon.com/ec2/instance-types for a list of instance types.",
+      "Description": "AWS instance type to use for MATLAB. For more information about instance types, see https://aws.amazon.com/ec2/instance-types.",
       "Default": "m5.xlarge",
       "Type": "String"
     },
     "InstanceName": {
-      "Description": "Name for the MATLAB virtual machine",
+      "Description": "Name for the MATLAB virtual machine.",
       "Default": "MATLAB Desktop",
       "Type": "String"
     },
     "AccessProtocol": {
-      "Description": "Access protocol to connect to this instance",
+      "Description": "Access protocol used to connect to the instance.",
       "Default": "RDP",
       "Type": "String",
       "AllowedValues": [
@@ -491,7 +491,7 @@
       ]
     },
     "EnableMATLABProxy": {
-      "Description": "Option that enables access to MATLAB on your cloud instance within a browser. Opening MATLAB in a browser opens a separate MATLAB session to your Remote Desktop Protocol (RDP) session or NICE DCV session.",
+      "Description": "Option that enables access to MATLAB in a browser on your cloud instance. Opening MATLAB in a browser starts a MATLAB session separate from your Remote Desktop Protocol (RDP) session or NICE DCV session.",
       "Default": "Yes",
       "Type": "String",
       "AllowedValues": [
@@ -500,7 +500,7 @@
       ]
     },
     "UseElasticIpAddress": {
-      "Description": "Flag indicating whether you want to keep the same public IP address for the instance",
+      "Description": "Flag specifying whether or not you want to keep the same public IP address for the instance.",
       "Default": "No",
       "Type": "String",
       "AllowedValues": [
@@ -509,7 +509,7 @@
       ]
     },
     "RootVolumeSize": {
-      "Description": "Size in GB of the root volume",
+      "Description": "Size of the root volume, in GB.",
       "Default": "128",
       "Type": "Number",
       "MinValue": "128",
@@ -529,7 +529,7 @@
       "ConstraintDescription": "If specified, must be a semicolon (;) delimited list of ARNs (arn:<partition>:iam::<account-id>:policy/<resource-id>)."
     },
     "VPC": {
-      "Description": "ID of an existing VPC in which to deploy this stack",
+      "Description": "ID of an existing VPC to deploy this stack in.",
       "Type": "AWS::EC2::VPC::Id",
       "ConstraintDescription": "Must be the ID of an existing VPC.",
       "AllowedPattern": ".+"
@@ -537,17 +537,17 @@
     "Subnet": {
       "Description": "ID of an existing subnet. To access the instance from anywhere, ensure that your subnet auto-assigns public IP addresses and is connected to the internet.",
       "Type": "AWS::EC2::Subnet::Id",
-      "ConstraintDescription": "Must be the ID of an existing Subnet within the chosen VPC.",
+      "ConstraintDescription": "Must be the ID of an existing subnet within the chosen VPC.",
       "AllowedPattern": ".+"
     },
     "SSHKeyName": {
-      "Description": "Name of an existing EC2 KeyPair to allow SSH access to all the instances. See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html for details on creating these.",
+      "Description": "Name of an existing EC2 key pair to allow SSH access to all the instances. For more information about creating these key pairs, see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html.",
       "Type": "AWS::EC2::KeyPair::KeyName",
-      "ConstraintDescription": "Must be the name of an existing EC2 KeyPair.",
+      "ConstraintDescription": "Must be the name of an existing EC2 key pair.",
       "AllowedPattern": ".+"
     },
     "ClientIPAddress": {
-      "Description": "Comma-separated list of IP address ranges that will be allowed to connect to this instance. Each IP CIDR should be formatted as <ip_address>/<mask>. The mask determines the number of IP addresses to include. A mask of 32 is a single IP address. Example of allowed values: 10.0.0.1/32 or 10.0.0.0/16,192.34.56.78/32. This calculator can be used to build a specific range: https://www.ipaddressguide.com/cidr. You may need to contact your IT administrator to determine which address is appropriate.",
+      "Description": "Comma-separated list of IP address ranges that will be allowed to connect to this instance. Each IP CIDR must have the format <ip_address>/<mask>. The mask determines the number of IP addresses to include. A mask of 32 specifies a single IP address. Examples of allowed values: 10.0.0.1/32 or 10.0.0.0/16,192.34.56.78/32. To build a specific range, you can use this tool: https://www.ipaddressguide.com/cidr. To determine which address is appropriate, contact your IT administrator.",
       "Type": "String",
       "MinLength": "9",
       "MaxLength": "189",
@@ -556,25 +556,25 @@
     },
     "Password": {
       "NoEcho": "true",
-      "Description": "Password for the \"ubuntu\" user. You also need to enter this as an authentication token to access MATLAB on your cloud instance within a browser.",
+      "Description": "Password for the \"ubuntu\" user. You must also enter this password as an authentication token to access MATLAB in a browser on your cloud instance.",
       "Type": "String",
       "ConstraintDescription": "Must have a minimum of 14 characters, 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character",
       "AllowedPattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{14,}$"
     },
     "ConfirmPassword": {
       "NoEcho": "true",
-      "Description": "Confirm Password",
+      "Description": "Confirm password.",
       "Type": "String"
     },
     "LicenseManager": {
-      "Description": "Optional License Manager for MATLAB, specified as a string in the form <port>@<hostname>. If not specified, use online licensing. If specified, the network license manager (NLM) must be accessible from the specified VPC and subnets. To use the private hostname of the NLM hub instead of the public hostname, specify the security group ID of the NLM hub in the AdditionalSecurityGroup parameter. For more information, see https://github.com/mathworks-ref-arch/license-manager-for-matlab-on-aws.",
+      "Description": "Optional License Manager for MATLAB, specified as a string of the form <port>@<hostname>. If not specified, online licensing is used instead. If specified, the network license manager (NLM) must be accessible from the specified VPC and subnets. To use the private hostname of the NLM hub instead of the public hostname, specify the security group ID of the NLM hub in the AdditionalSecurityGroup parameter. For more information, see https://github.com/mathworks-ref-arch/license-manager-for-matlab-on-aws.",
       "Type": "String",
       "Default": "",
       "AllowedPattern": "([0-9]+@[a-zA-Z0-9.\\-]+)?",
-      "ConstraintDescription": "If specified, must be in the form <port>@<hostname>"
+      "ConstraintDescription": "If specified, must be of the form <port>@<hostname>"
     },
     "EnableCloudWatch": {
-      "Description": "Flag indicating whether cloudwatch logging for the MATLAB instance is enabled.",
+      "Description": "Flag indicating whether to enable cloudwatch logging for the MATLAB instance. When using private instances, CloutWatch logs might not be updated unless you set up a NAT Gateway or VPC endpoint. For details about private networking, see [Configure Private Network](#configure-private-network).",
       "Type": "String",
       "AllowedValues": [
         "Yes",
@@ -615,17 +615,17 @@
       "Default": "Never"
     },
     "AdditionalSecurityGroup": {
-      "Description": "ID of an additional (optional) Security Group for the instances to be placed in. Often the License Manager for MATLAB's Security Group.",
+      "Description": "(Optional) ID of an additional security group to place the instances in. Often the security group of the License Manager for MATLAB.",
       "Type": "String",
       "Default": ""
     },
     "CustomAmiId": {
       "Default": "",
-      "Description": "ID of a custom Amazon Machine Image (AMI) in the target region (optional). If the build has been customized then the resulting machine image may no longer be compatible with the provided CloudFormation template. Compatability can in some cases be restored by making corresponding modifications to the CloudFormation template. The ID should start with 'ami-'.",
+      "Description": "(Optional) ID of a custom Amazon Machine Image (AMI) in the target region. If the build has been customized then the resulting machine image might no longer be compatible with the provided CloudFormation template. In some cases you can restore compatability by making corresponding modifications to the CloudFormation template. The ID must start with 'ami-'.",
       "Type": "String"
     },
     "OptionalUserCommand": {
-      "Description": "Provide an optional inline shell command to run on machine launch. For example, to set an environment variable CLOUD=AWS, use this command excluding the angle brackets: <echo -e \"export CLOUD=AWS\" | tee -a /etc/profile.d/setenvvar.sh && source /etc/profile>. To run an external script, use this command excluding the angle brackets: <wget -O /tmp/my-script.sh \"https://www.example.com/script.sh\" && bash /tmp/my-script.sh>. Find the logs at '/var/log/mathworks/startup.log'.",
+      "Description": "Provide an optional inline shell command to run on machine launch. For example, to set an environment variable CLOUD=AWS, use this command, excluding the angle brackets: <echo -e \"export CLOUD=AWS\" | tee -a /etc/profile.d/setenvvar.sh && source /etc/profile>. To run an external script, use this command, excluding the angle brackets: <wget -O /tmp/my-script.sh \"https://www.example.com/script.sh\" && bash /tmp/my-script.sh>. Find the logs at '/var/log/mathworks/startup.log'.",
       "Type": "String",
       "Default": ""
     }
